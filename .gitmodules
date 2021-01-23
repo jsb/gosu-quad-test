@@ -1,0 +1,3 @@
+[submodule "extern/gosu"]
+	path = extern/gosu
+	url = https://github.com/gosu/gosu
