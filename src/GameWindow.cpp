@@ -60,9 +60,8 @@ void GameWindow::button_down(Gosu::Button _button)
     if (_button == Gosu::MS_LEFT)
     {
         const auto m = Point{input().mouse_x(), input().mouse_y()};
-        for (int i = 0; i < 4; ++i)
+        for (auto& c : corners)
         {
-            auto& c = corners[i];
             if (Gosu::distance(m.x, m.y, c.x, c.y) < 20)
             {
                 dragging_corner = &c;
