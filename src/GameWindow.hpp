@@ -1,6 +1,5 @@
 #pragma once
 
-#include <variant>
 #include <Gosu/Gosu.hpp>
 
 struct Point
